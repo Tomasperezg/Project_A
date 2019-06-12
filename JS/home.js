@@ -1,8 +1,8 @@
 "use strict";
 {
   let home = {
-    emplateUrl: "home.html"
-  }
+    templateUrl: "home.html"
+  };
   angular
    .module("App")
    .component("home", home);
