@@ -7,21 +7,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-    <ng-view></ng-view>
+    <!-- <ng-view></ng-view> -->
+    <main ng-view></main>
+    <div class="NavBar_Container">
       <ul class="NavBar">
         <li class="NavItem"><a href="#!/home">Home</a></li>
         <li class="NavItem"><a href="">Contact</a></li>
-        <li class="NavItem"><a href="">Projects</a></li>
+        <li class="NavItem"><a href="#!/projects">Projects</a></li>
         <li class="NavItem"><a href="">Mentions</a></li>
         <li class="NavItem"><a href="">Who are we?</a></li>
       </ul>
-    
+    <div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
     <script src="JS/index.js"></script>
     <script src="JS/Router.js"></script>
     <script src="JS/home.js"></script>
+    <script src="JS/projects.js"></script>
 
   </body>
 </html>
