@@ -4,6 +4,7 @@ body {
     margin: 0 !important;
     padding: 0 !important;
 }
+
 /* Navigation */
 .NavBar{
   display: flex;
@@ -41,6 +42,10 @@ body {
 .Logo_Legend{
   text-align: center;
 }
+.hide{
+  display: none;
+}
+/* Body transtion effect */
 main.ng-enter {
   transition:0.5s linear all;
   opacity:0;

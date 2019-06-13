@@ -8,8 +8,12 @@
   </head>
   <body>
     <!-- <ng-view></ng-view> -->
-    <main ng-view></main>
-    <div class="NavBar_Container">
+  <div ng-controller="controller">
+    <div class="NavBar_Button" ng-click="NavBar_Open()">
+      Toggle NavBar
+    </div>
+
+    <div ng-class="NavBarDisplay">
       <ul class="NavBar">
         <li class="NavItem"><a href="#!/home">Home</a></li>
         <li class="NavItem"><a href="">Contact</a></li>
@@ -17,7 +21,10 @@
         <li class="NavItem"><a href="">Mentions</a></li>
         <li class="NavItem"><a href="">Who are we?</a></li>
       </ul>
-    <div>
+    </div>
+  </div>
+
+    <main ng-view></main>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
