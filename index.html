@@ -13,11 +13,11 @@
       Toggle NavBar
     </div>
 
-    <div ng-class="NavBarDisplay">
+    <div class="NavContainer" ng-class="NavBarDisplay">
       <ul class="NavBar">
-        <li class="NavItem"><a href="#!/home">Home</a></li>
+        <li class="NavItem" ng-click="HideNavBar()"><a href="#!/home">Home</a></li>
         <li class="NavItem"><a href="">Contact</a></li>
-        <li class="NavItem"><a href="#!/projects">Projects</a></li>
+        <li class="NavItem" ng-click="HideNavBar()"><a href="#!/projects">Projects</a></li>
         <li class="NavItem"><a href="">Mentions</a></li>
         <li class="NavItem"><a href="">Who are we?</a></li>
       </ul>

@@ -6,15 +6,33 @@ body {
 }
 
 /* Navigation */
+.NavContainer{
+  z-index: 1;
+  position: absolute;
+}
+.NavBar_Button{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
 .NavBar{
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
   height: 100%;
+  font-family: "Avenir Next", "Avenir", sans-serif;
 }
+
 .NavItem{
   width: 90px;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+a:hover{
+  color: tomato;
 }
 /* Home Page CSS */
 .HomePage_Background{
