@@ -9,17 +9,13 @@
   <body>
     <!-- <ng-view></ng-view> -->
   <div ng-controller="controller">
-    <div class="NavBar_Button" ng-click="NavBar_Open()">
+    <div ng-model="click" ng-init="click=true" class="NavBar_Button" ng-click="NavBar_Open()">
       Toggle NavBar
     </div>
 
-    <div class="NavContainer" ng-class="NavBarDisplay">
-      <ul class="NavBar">
-        <li class="NavItem" ng-click="HideNavBar()"><a href="#!/home">Home</a></li>
-        <li class="NavItem"><a href="">Contact</a></li>
-        <li class="NavItem" ng-click="HideNavBar()"><a href="#!/projects">Projects</a></li>
-        <li class="NavItem"><a href="">Mentions</a></li>
-        <li class="NavItem"><a href="">Who are we?</a></li>
+    <div class="NavContainer" ng-class="NavBarDisplay" ng-controller="ngrepeatCtrl">
+      <ul class="NavBar" ng-repeat="ItemList in NavBarItemList">
+        <li class="NavItem" ng-click="HideNavBar()"><a class="NavItem" href="{{ItemList.Link}}">{{ItemList.name}}</a></li>
       </ul>
     </div>
   </div>
