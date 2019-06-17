@@ -9,15 +9,23 @@
   <body>
     <!-- <ng-view></ng-view> -->
   <div ng-controller="controller">
-    <div ng-model="click" ng-init="click=true" class="NavBar_Button" ng-click="NavBar_Open()">
+    <div class="NavBar_Button" ng-click="fadeAnimation = !fadeAnimation">
       Toggle NavBar
     </div>
 
-    <div class="NavContainer" ng-class="NavBarDisplay" ng-controller="ngrepeatCtrl">
-      <ul class="NavBar" ng-repeat="ItemList in NavBarItemList">
-        <li class="NavItem" ng-click="HideNavBar()"><a class="NavItem" href="{{ItemList.Link}}">{{ItemList.name}}</a></li>
+
+    <div class="NavContainer" ng-if="fadeAnimation">
+
+      <ul class="NavBar" ng-class="NavBarDisplay" >
+        <li ng-repeat="ItemList in NavBarItemList" class="NavItem" ng-click="HideNavBar()" ng-animate= "{enter: ‘animate-enter’, leave: ‘animate-leave’}" >
+          <a class="NavItem" href="{{ItemList.Link}}">
+            {{ItemList.name}}
+          </a>
+        </li>
       </ul>
+
     </div>
+
   </div>
 
     <main ng-view></main>
