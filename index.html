@@ -2,22 +2,24 @@
 <html ng-app="App">
   <head>
     <title>Project A</title>
+    <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="styles.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- <ng-view></ng-view> -->
   <div ng-controller="controller">
-    <div class="NavBar_Button" ng-click="fadeAnimation = !fadeAnimation">
-      Toggle NavBar
+    <div ng-click="isCollapsed=!isCollapsed" class="NavBar_Button">
+      <span  ng-class="{'glyphicon glyphicon-menu-down pull-right pan_arrow1': !isCollapsed, 'glyphicon glyphicon-menu-up pull-right pan_arrow1': isCollapsed}" ng-click="NavBar_Open()"></span>
     </div>
 
 
-    <div class="NavContainer" ng-if="fadeAnimation">
+    <div class="NavContainer">
 
       <ul class="NavBar" ng-class="NavBarDisplay" >
-        <li ng-repeat="ItemList in NavBarItemList" class="NavItem" ng-click="HideNavBar()" ng-animate= "{enter: ‘animate-enter’, leave: ‘animate-leave’}" >
+        <li ng-repeat="ItemList in NavBarItemList" class="NavItem" ng-click="HideNavBar()" >
           <a class="NavItem" href="{{ItemList.Link}}">
             {{ItemList.name}}
           </a>
@@ -32,6 +34,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="JS/index.js"></script>
     <script src="JS/Router.js"></script>
     <script src="JS/home.js"></script>

@@ -11,4 +11,24 @@ index.controller("controller",function($scope){
     {Link: "#!/whoarewe", name: 'Who are we?'}
   ];
 
+
+   $scope.NavBarDisplay = "hide";
+    $scope.NavBar_Open = function(){
+        if ($scope.NavBarDisplay)
+            $scope.NavBarDisplay = "";
+
+         else
+            $scope.NavBarDisplay = "hide";
+
+    };
+
+    $scope.HideNavBar = function(){
+      if ($scope.NavBarDisplay === "hide")
+          $scope.NavBarDisplay = "NavBar";
+
+       else
+          $scope.NavBarDisplay = "hide";
+    }
+
+
 });

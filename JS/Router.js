@@ -10,6 +10,6 @@
         .when("/projects", {
           template: "<projects></projects>"
         })
-        .otherwise({redirecTo: "/home"});
+        .otherwise({redirectTo: "/home"});
     });
 }

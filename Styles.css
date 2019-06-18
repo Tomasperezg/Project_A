@@ -26,23 +26,23 @@ body {
 }
 .NavContainer.ng-enter {
   transition: 0.9s linear all;
-  transform: translateX(40px);
+  transform: translateY(40px);
   opacity: 0;
 }
 .NavContainer.ng-enter.ng-enter-active {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
-.NavItem.ng-leave {
+.NavContainer.ng-leave {
   transition: 0.9s linear all;
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
-.NavItem.ng-leave.ng-leave-active {
-  transform: translateX(40px);
+.NavContainer.ng-leave.ng-leave-active {
+  transform: translateY(40px);
   opacity: 0;
 }
-.NavItem.ng-leave-stagger {
+.NavContainer li.NavItem.ng-leave-stagger {
   transition-delay: 0.3s;
   transition-duration: 0;
 }
@@ -50,7 +50,8 @@ body {
 .NavItem{
   width: 120px;
   color: white;
-
+  font-size: 16px;
+  margin-bottom: 25px;
 }
 
 a.NavItem{
@@ -70,7 +71,7 @@ a.NavItem:hover{
 }
 .Hero_1{
   width: 50%;
-  height: 790px;
+  height: 820px;
 }
 .Logo{
   width: 50%;
@@ -100,12 +101,3 @@ main.ng-enter {
 main.ng-enter.ng-enter-active {
   opacity:1;
 }
-/* .Logo_Legend.ng-enter{
-  transition: 0.9s linear all;
-  opacity: 0;
-  transform: translateX(25px;);
-}
-.Logo_Legend.ng-enter.ng-enter-active{
-  opacity: 1;
-  transform: translateX(0);
-} */
