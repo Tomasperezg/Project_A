@@ -1,7 +1,9 @@
 "use strict";
 {
   let home = {
-    templateUrl: "home.html"
+    templateUrl: "home.html",
+
+    
   };
   angular
    .module("App")

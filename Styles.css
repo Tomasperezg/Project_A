@@ -17,34 +17,15 @@ body {
   flex-direction: column;
   align-items: flex-start;
   font-family: "Avenir Next", "Avenir", sans-serif;
-  transition: 0.9s linear all;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 .NavBar_Button{
   margin-bottom: 10px;
   font-size: 20px;
   position: absolute;
-}
-.NavContainer.ng-enter {
-  transition: 0.9s linear all;
-  transform: translateY(40px);
-  opacity: 0;
-}
-.NavContainer.ng-enter.ng-enter-active {
-  transform: translateY(0);
-  opacity: 1;
-}
-.NavContainer.ng-leave {
-  transition: 0.9s linear all;
-  transform: translateY(0);
-  opacity: 1;
-}
-.NavContainer.ng-leave.ng-leave-active {
-  transform: translateY(40px);
-  opacity: 0;
-}
-.NavContainer li.NavItem.ng-leave-stagger {
-  transition-delay: 0.3s;
-  transition-duration: 0;
+  margin-left: 25px;
+  margin-top: 15px;
 }
 
 .NavItem{
@@ -73,14 +54,14 @@ a.NavItem:hover{
   width: 50%;
   height: 820px;
 }
+.Hero_img{
+  width: 100%;
+}
 .Logo{
   width: 50%;
   text-align: center;
 }
 .Logo_Home{
-  border-style: double;
-  border-width: 3px;
-  border-color: black;
   padding: 15px;
   flex-wrap: wrap;
   text-align: center;
