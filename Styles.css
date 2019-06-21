@@ -50,6 +50,7 @@ a.NavItem:hover{
   align-items: center;
   justify-content: center;
 }
+/* slideshow */
 .Hero_1{
   width: 50%;
   height: 820px;
@@ -57,6 +58,30 @@ a.NavItem:hover{
 .Hero_img{
   width: 100%;
 }
+.animate-enter,.animate-leave {
+	-webkit-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+	-moz-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+	-ms-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+	-o-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+	transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+}
+
+.animate-enter {
+	left:100%;
+}
+
+.animate-enter.animate-enter-active {
+	left:0;
+}
+
+.animate-leave {
+	left:0;
+}
+
+.animate-leave.animate-leave-active {
+	margin-left:-100%;
+}
+/* Company Logo */
 .Logo{
   width: 50%;
   text-align: center;

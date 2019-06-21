@@ -8,7 +8,7 @@
 
         </div>
         <div class="Hero_1">
-            <img class="Hero_img"src="Images/Hero_1.jpg" alt="Hero banner">
+            <img ng-repeat="Image in $ctrl.Images"class="Hero_img"src="{{Image.CarImg}}" alt="{{Image.alter}}" >
         </div>
     </div>
 </body>
