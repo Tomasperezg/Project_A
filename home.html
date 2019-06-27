@@ -2,14 +2,18 @@
 <body>
     <div class="HomePage_Background">
         <div class="Logo">
-          <img class="Logo_Home"src="Images/Logo.webp" alt="Company logo"/>
+          <img ng-repeat="logo in $ctrl.LogoI" class="Logo_Home" ng-src="{{logo.LogoImg}}" alt="{{logo.text}}"/>
 
           <p class="Logo_Legend">old homes, reimagined</p>
 
         </div>
+
         <div class="Hero_1">
-            <img ng-repeat="Image in $ctrl.Images"class="Hero_img"src="{{Image.CarImg}}" alt="{{Image.alter}}" >
+
+              <img  ng-repeat="Image in $ctrl.Images"class="Hero_img"ng-src="{{Image.CarImg}}" alt="{{Image.alter}}" />
+
         </div>
+
     </div>
 </body>
 </html>

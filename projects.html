@@ -1,8 +1,14 @@
 <html>
 <body>
-  {{2+3}}
+
+  <div class="Project_Herotxt">
+    <p class="Herotxt">Projects</p>
+  </div>
   <div>
-    <p>Hello World</p>
+    <ul class="Projects_List">
+        <li class="Project_Item" ng-repeat="Item in $ctrl.projectsItems">{{Item.Name}}</li>
+    </ul>
+    
   </div>
 </body>
 </html>
