@@ -5,10 +5,13 @@
     <p class="Herotxt">Projects</p>
   </div>
   <div>
+
     <ul class="Projects_List">
-        <li class="Project_Item" ng-repeat="Item in $ctrl.projectsItems">{{Item.Name}}</li>
+        <li class="Project_Item" ng-repeat="Item in $ctrl.projectItems">{{Item.Name}}</li>
+        <li class="Project_Item" ng-repeat="Item in $ctrl.projectItems">{{Item.Text}}</li>
+        <img ng-repeat="Item in $ctrl.projectItems" ng-src="{{Item.Image}}" />
     </ul>
-    
+
   </div>
 </body>
 </html>

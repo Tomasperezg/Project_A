@@ -10,8 +10,8 @@ angular.
         method: 'GET',
         url: 'HomeProjects.json'
       }).then(function (data){
-          $scope.projects = data;
-          console.log($scope.projects);
+          self.projectItems = data.data;
+          console.log(self.projectItems);
           console.log("This is working");
 
         },function (error){
