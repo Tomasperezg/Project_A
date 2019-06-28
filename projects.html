@@ -4,12 +4,11 @@
   <div class="Project_Herotxt">
     <p class="Herotxt">Projects</p>
   </div>
-  <div>
+  <div class="Projects_Container">
 
-    <ul class="Projects_List">
-        <li class="Project_Item" ng-repeat="Item in $ctrl.projectItems">{{Item.Name}}</li>
-        <li class="Project_Item" ng-repeat="Item in $ctrl.projectItems">{{Item.Text}}</li>
-        <img ng-repeat="Item in $ctrl.projectItems" ng-src="{{Item.Image}}" />
+    <ul class="Projects_List" ng-repeat="Item in $ctrl.projectItems">
+        <img class="Project_Image" ng-src="{{Item.Image}}" alt="{{Item.Text}}" />
+        <li class="Project_Item">{{Item.Name}}</li>
     </ul>
 
   </div>

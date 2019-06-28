@@ -1,26 +1,26 @@
 [{
 		"Name": "Home 1",
-		"Image": "file:///Users/tomas/Github/Peoject_A/Images/Home1.jpg",
+		"Image": "Images/Home1.jpg",
 		"Text": "This is the Image of home 1"
 	},
 	{
 		"Name": "Home 2",
-		"Image": "file:///Users/tomas/Github/Peoject_A/Images/Home2.jpg",
+		"Image": "Images/Home2.jpg",
 		"Text": "This is the Image of home 2"
 	},
 	{
 		"Name": "Home 3",
-		"Image": "file:///Users/tomas/Github/Peoject_A/Images/Home3.jpg",
+		"Image": "Images/Home3.jpg",
 		"Text": "This is the Image of home 3"
 	},
 	{
 		"Name": "Home 4",
-		"Image": "file:///Users/tomas/Github/Peoject_A/Images/Home4.jpg",
+		"Image": "Images/Home4.jpg",
 		"Text": "This is the Image of home 4"
 	},
 	{
 		"Name": "Home 5",
-		"Image": "file:///Users/tomas/Github/Peoject_A/Images/Home5.jpg",
+		"Image": "Images/Home5.jpg",
 		"Text": "This is the Image of home 5"
 	}
 ]

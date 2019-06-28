@@ -3,14 +3,14 @@ angular.
   module('App').
   component('projects', {
     templateUrl: "projects.html",
-    controller: function ProjectController($scope, $http){
+    controller: function ProjectController($http){
       var self = this;
 
       $http({
         method: 'GET',
         url: 'HomeProjects.json'
-      }).then(function (data){
-          self.projectItems = data.data;
+      }).then(function(response) {
+          self.projectItems = response.data;
           console.log(self.projectItems);
           console.log("This is working");
 

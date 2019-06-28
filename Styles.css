@@ -59,29 +59,6 @@ a.NavItem:hover{
 .Hero_img{
   width: 100%;
 }
-.animate-enter,.animate-leave {
-	-webkit-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
-	-moz-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
-	-ms-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
-	-o-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
-	transition:1000ms cubic-bezier(.165,.84,.44,1) all;
-}
-
-.animate-enter {
-	left:100%;
-}
-
-.animate-enter.animate-enter-active {
-	left:0;
-}
-
-.animate-leave {
-	left:0;
-}
-
-.animate-leave.animate-leave-active {
-	margin-left:-100%;
-}
 /* Company Logo */
 .Logo{
   width: 50%;
@@ -100,6 +77,15 @@ a.NavItem:hover{
   display: none;
 }
 /* Project Section */
+.Projects_Container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ul.Projects_List{
+
+
+}
 .Project_Herotxt{
   text-align: center;
   padding-top: 25px;
@@ -107,13 +93,28 @@ a.NavItem:hover{
 }
 .Project_Item{
   font-size: 25px;
+  text-align: center;
+}
+.Project_Image{
+  width: 200px;
+  height: 185px;
+}
+.Projects_List.ng-enter {
+  transition:0.9s linear all;
+  opacity:0;
+}
+.Projects_List.ng-enter-stagger {
+  transition-delay: 0.3s;
+}
+.Projects_List.ng-enter.ng-enter-active {
+  opacity:1;
 }
 
 
 
 /* Body transtion effect */
 main.ng-enter {
-  transition:0.9s linear all;
+  transition:0.4s linear all;
   opacity:0;
 }
 
@@ -125,7 +126,7 @@ main.ng-enter.ng-enter-active {
 main.ng-leave {
   position: absolute;
   opacity: 1;
-  transition: 0.9s linear all;
+  transition: 0.4s linear all;
   top: 0;
 }
 main.ng-leave.ng-leave-active{
