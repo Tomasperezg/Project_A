@@ -10,6 +10,9 @@
         .when("/projects", {
           template: "<projects></projects>"
         })
+        .when("/projects/:ItemID",{
+          template: "<projectdetail></projectdetail>"
+        })
         .otherwise({redirectTo: "/home"});
     });
 }

@@ -47,6 +47,9 @@ a.NavItem{
 a.NavItem:hover{
   color: tomato;
 }
+a.NavItem:active{
+  color: tomato;
+}
 
 /* Home Page CSS */
 .HomePage_Background{

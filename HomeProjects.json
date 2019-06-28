@@ -1,4 +1,5 @@
 [{
+    "ID": "1",
 		"Name": "Home 1",
 		"Image": "Images/Home1.jpg",
 		"Text": "This is the Image of home 1",
@@ -13,28 +14,78 @@
     ]
 	},
 	{
+    "ID": "2",
 		"Name": "Home 2",
 		"Image": "Images/Home2.jpg",
-		"Text": "This is the Image of home 2"
+		"Text": "This is the Image of home 2",
+    "Description": "This is a small description of home 2",
+    "Aspects": "This is INFO about the spects of this houese",
+    "ImagesArray": [
+        "Images/Home1.jpg",
+        "Images/Home2.jpg",
+        "Images/Home3.jpg",
+        "Images/Home4.jpg",
+        "Images/Home5.jpg"
+      ]
 	},
 	{
+    "ID": "3",
 		"Name": "Home 3",
 		"Image": "Images/Home3.jpg",
-		"Text": "This is the Image of home 3"
+		"Text": "This is the Image of home 3",
+    "Description": "This is a small description of home 3",
+    "Aspects": "This is INFO about the spects of this houese",
+    "ImagesArray": [
+        "Images/Home1.jpg",
+        "Images/Home2.jpg",
+        "Images/Home3.jpg",
+        "Images/Home4.jpg",
+        "Images/Home5.jpg"
+      ]
 	},
 	{
+    "ID": "4",
 		"Name": "Home 4",
 		"Image": "Images/Home4.jpg",
-		"Text": "This is the Image of home 4"
+		"Text": "This is the Image of home 4",
+    "Description": "This is a small description of home 4",
+    "Aspects": "This is INFO about the spects of this houese",
+    "ImagesArray": [
+        "Images/Home1.jpg",
+        "Images/Home2.jpg",
+        "Images/Home3.jpg",
+        "Images/Home4.jpg",
+        "Images/Home5.jpg"
+      ]
 	},
 	{
+    "ID": "5",
 		"Name": "Home 5",
 		"Image": "Images/Home5.jpg",
-		"Text": "This is the Image of home 5"
+		"Text": "This is the Image of home 5",
+    "Description": "This is a small description of home 5",
+    "Aspects": "This is INFO about the spects of this houese",
+    "ImagesArray": [
+        "Images/Home1.jpg",
+        "Images/Home2.jpg",
+        "Images/Home3.jpg",
+        "Images/Home4.jpg",
+        "Images/Home5.jpg"
+      ]
 	},
   {
+    "ID": "6",
 		"Name": "Home 6",
 		"Image": "Images/Hero_1.jpg",
-		"Text": "This is the Image of home 6"
+		"Text": "This is the Image of home 6",
+    "Description": "This is a small description of home 6",
+    "Aspects": "This is INFO about the spects of this houese",
+    "ImagesArray": [
+        "Images/Home1.jpg",
+        "Images/Home2.jpg",
+        "Images/Home3.jpg",
+        "Images/Home4.jpg",
+        "Images/Home5.jpg"
+      ]
 	}
 ]

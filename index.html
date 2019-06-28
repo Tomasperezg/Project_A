@@ -19,7 +19,7 @@
     <div class="NavContainer">
 
       <ul class="NavBar" ng-class="NavBarDisplay" ng-click="isCollapsed=!isCollapsed">
-        <li ng-repeat="ItemList in NavBarItemList" class="NavItem" ng-click="HideNavBar()" >
+        <li ng-repeat="ItemList in NavBarItemList" class="NavItem" ng-click="HideNavBar()">
           <a class="NavItem" href="{{ItemList.Link}}">
             {{ItemList.name}}
           </a>
@@ -40,6 +40,6 @@
     <script src="JS/Router.js"></script>
     <script src="JS/home.js"></script>
     <script src="JS/projects.js"></script>
-
+    <script src="JS/projectdetails.js"></script>
   </body>
 </html>
