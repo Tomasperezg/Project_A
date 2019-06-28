@@ -1,7 +1,16 @@
 [{
 		"Name": "Home 1",
 		"Image": "Images/Home1.jpg",
-		"Text": "This is the Image of home 1"
+		"Text": "This is the Image of home 1",
+    "Description": "This is a small description of home 1",
+    "Aspects": "This is INFO about the spects of this houese",
+    "ImagesArray": [
+        "Images/Home1.jpg",
+        "Images/Home2.jpg",
+        "Images/Home3.jpg",
+        "Images/Home4.jpg",
+        "Images/Home5.jpg"
+    ]
 	},
 	{
 		"Name": "Home 2",
@@ -22,5 +31,10 @@
 		"Name": "Home 5",
 		"Image": "Images/Home5.jpg",
 		"Text": "This is the Image of home 5"
+	},
+  {
+		"Name": "Home 6",
+		"Image": "Images/Hero_1.jpg",
+		"Text": "This is the Image of home 6"
 	}
 ]

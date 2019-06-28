@@ -1,7 +1,7 @@
 "use strict";
 {
   angular
-    .module("App")
+    .module("homeApp")
     .config(($routeProvider) => {
       $routeProvider
         .when("/home", {

@@ -1,7 +1,7 @@
 "use strict";
 
 angular.
-  module('App').
+  module('homeApp').
   component('home', {
     templateUrl: "home.html",
     controller: function controller2() {

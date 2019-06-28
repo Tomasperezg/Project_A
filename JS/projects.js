@@ -1,6 +1,6 @@
 "use strict";
 angular.
-  module('App').
+  module('homeApp').
   component('projects', {
     templateUrl: "projects.html",
     controller: function ProjectController($http){
