@@ -1,0 +1,16 @@
+[{
+	"Bedrooms": "3",
+	"Bathrooms": "2",
+	"Price": "200,000",
+	"location": "East Grand Rapids",
+	"Description": "This is the example of some description",
+	"Available": "sold",
+	"Sold": "04/07/1994",
+	"Images": [
+		"Images/Home1.jpg",
+		"Images/Home2.jpg",
+		"Images/Home3.jpg",
+		"Images/Home4.jpg",
+		"Images/Home5.jpg"
+	]
+}]

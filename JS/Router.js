@@ -11,7 +11,7 @@
           template: "<projects></projects>"
         })
         .when("/projects/:ItemID",{
-          template: "<projectdetail></projectdetail>"
+          template: "<project-detail></project-detail>"
         })
         .otherwise({redirectTo: "/home"});
     });

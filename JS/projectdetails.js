@@ -1,14 +1,15 @@
 "use strict";
 angular.
   module('homeApp').
-  component('projectdetail', {
+  component('projectDetail', {
     templateUrl: "projectdetail.html",
-    controller: function homeDetailController ($http, $routeParams){
+    controller: ['$http', '$routeParams',
+    function homeDetailController ($http, $routeParams){
       var self = this;
 
       $http({
         method:'GET',
-        url: 'HomeProjects'+ $routeParams.ItemID + '.json'
+        url: 'JSON/'+ $routeParams.ItemID + '.json'
       }).then(function(response) {
           self.home = response.data;
           console.log(self.home);
@@ -18,6 +19,6 @@ angular.
           console.log("There is an error");
         });
     }
-
+]
 
 });

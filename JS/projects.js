@@ -8,7 +8,7 @@ angular.
 
       $http({
         method: 'GET',
-        url: 'HomeProjects.json'
+        url: 'JSON/HomeProjects.json'
       }).then(function(response) {
           self.projectItems = response.data;
           console.log(self.projectItems);
