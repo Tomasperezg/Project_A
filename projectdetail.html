@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html>
 <body>
+
   <div ng-repeat="detail in $ctrl.home">
-    <p>{{detail.Bedrooms}}</p>
+    <p>Bedrooms: {{detail.Bedrooms}}</p>
+    <p>Bathrooms: {{detail.Bathrooms}}</p>
+    <div>
+      <img class="Main_Image" ng-src="{{detail.Images[0]}}"/>
+    </div>
+    <ul class="Detail_Image">
+      <li ng-repeat="img in detail.Images">
+        <img ng-src="{{img}}" />
+      </li>
+    </ul>
   </div>
+
+
+
+
+
 </body>
 </html>

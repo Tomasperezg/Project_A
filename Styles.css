@@ -119,8 +119,14 @@ ul.Projects_List{
 .Projects_List.ng-enter.ng-enter-active {
   opacity:1;
 }
-
-
+.Detail_Image img{
+  width: 350px;
+  height: 300px;
+}
+.Main_Image{
+  width: 500px;
+  height: 450px;
+}
 
 /* Body transtion effect */
 main.ng-enter {
