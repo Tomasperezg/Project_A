@@ -113,21 +113,37 @@ ul.Projects_List{
   transition:0.9s linear all;
   opacity:0;
 }
-.Projects_List.ng-enter-stagger {
-  transition-delay: 0.3s;
-}
+
 .Projects_List.ng-enter.ng-enter-active {
   opacity:1;
 }
+.Projects_List.ng-enter-stagger {
+  transition-delay: 0.3s;
+}
+.Detail_Image_Container ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 25px;
+}
 .Detail_Image img{
-  width: 350px;
-  height: 300px;
+  width: 100px;
+  height: 60px;
+}
+.Main_Image_Container{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 .Main_Image{
   width: 500px;
   height: 450px;
 }
-
+.projectDetail_Herotxt{
+  font-size: 40px;
+  margin-left: 100px;
+  padding-top: 25px;
+}
 /* Body transtion effect */
 main.ng-enter {
   transition:0.4s linear all;

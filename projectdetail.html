@@ -3,16 +3,25 @@
 <body>
 
   <div ng-repeat="detail in $ctrl.home">
-    <p>Bedrooms: {{detail.Bedrooms}}</p>
-    <p>Bathrooms: {{detail.Bathrooms}}</p>
-    <div>
+    <div class="projectDetail_Herotxt">
+      <h1>{{detail.Name}}</h1>
+    </div>
+    <div class="Main_Image_Container">
       <img class="Main_Image" ng-src="{{detail.Images[0]}}"/>
     </div>
-    <ul class="Detail_Image">
-      <li ng-repeat="img in detail.Images">
-        <img ng-src="{{img}}" />
-      </li>
-    </ul>
+
+    <div class="Detail_Image_Container">
+      <ul class="Detail_Image">
+        <li ng-repeat="img in detail.Images">
+          <img ng-src="{{img}}"/>
+        </li>
+      </ul>
+    </div>
+
+    <div class="Detail_Content">
+      <p>Bedrooms: {{detail.Bedrooms}}</p>
+      <p>Bathrooms: {{detail.Bathrooms}}</p>
+    </div>
   </div>
 
 
