@@ -7,8 +7,10 @@
   <div class="Projects_Container">
 
     <ul class="Projects_List" ng-repeat="Item in $ctrl.projectItems">
+      <div class="Project_Item_Cont">
         <a href="#!/projects/{{Item.ID}}"><img class="Project_Image" ng-src="{{Item.Image}}" alt="{{Item.Text}}" /></a>
         <li class="Project_Item">{{Item.Name}}</li>
+      </div>
     </ul>
 
   </div>

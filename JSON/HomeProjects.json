@@ -1,39 +1,39 @@
 [{
     "ID": "1",
+    "Image": "Images/Home1.jpg",
 		"Name": "Home 1",
-		"Image": "Images/Home1.jpg",
 		"Text": "This is the Image of home 1"
 
 	},
 	{
     "ID": "2",
+    "Image": "Images/Home2.jpg",
 		"Name": "Home 2",
-		"Image": "Images/Home2.jpg",
 		"Text": "This is the Image of home 2"
-
+ 
 	},
 	{
     "ID": "3",
+    "Image": "Images/Home3.jpg",
 		"Name": "Home 3",
-		"Image": "Images/Home3.jpg",
 		"Text": "This is the Image of home 3"
 	},
 	{
     "ID": "4",
+    "Image": "Images/Home4.jpg",
 		"Name": "Home 4",
-		"Image": "Images/Home4.jpg",
 		"Text": "This is the Image of home 4"
 	},
 	{
     "ID": "5",
+    "Image": "Images/Home5.jpg",
 		"Name": "Home 5",
-		"Image": "Images/Home5.jpg",
 		"Text": "This is the Image of home 5"
 	},
   {
     "ID": "6",
+    "Image": "Images/Hero_1.jpg",
 		"Name": "Home 6",
-		"Image": "Images/Hero_1.jpg",
 		"Text": "This is the Image of home 6"
 	}
 ]

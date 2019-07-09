@@ -22,13 +22,13 @@ body {
   align-items: flex-start;
   font-family: "Avenir Next", "Avenir", sans-serif;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 .NavBar_Button{
   margin-bottom: 10px;
   font-size: 20px;
   position: absolute;
-  margin-left: 25px;
+  margin-left: 35px;
   margin-top: 15px;
 }
 
@@ -38,16 +38,12 @@ body {
   font-size: 16px;
   margin-bottom: 25px;
 }
-
 a.NavItem{
   text-decoration: none;
   color: #232323;
   transition: color 0.3s ease;
 }
 a.NavItem:hover{
-  color: tomato;
-}
-a.NavItem:active{
   color: tomato;
 }
 
@@ -65,6 +61,9 @@ a.NavItem:active{
 }
 .Hero_img{
   width: 100%;
+  border-left: 5px;
+  border-color: #888888;
+  border-style: solid;
 }
 /* Company Logo */
 .Logo{
@@ -75,11 +74,17 @@ a.NavItem:active{
   padding: 15px;
   flex-wrap: wrap;
   text-align: center;
+  border-bottom: 2px;
+  border-color: black;
+  border-style: solid;
 }
 .Logo_Legend{
   text-align: center;
   padding-right: 17px;
+  font-family: 'Literata', serif;
+  color: black;
 }
+
 .hide{
   display: none;
 }
@@ -91,10 +96,6 @@ a.NavItem:active{
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 150px;
-}
-ul.Projects_List{
-
-
 }
 .Project_Herotxt{
   text-align: center;
@@ -108,6 +109,18 @@ ul.Projects_List{
 .Project_Image{
   width: 270px;
   height: 215px;
+  border-radius: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.Project_Image:hover{
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .Projects_List.ng-enter {
   transition:0.9s linear all;
@@ -120,6 +133,14 @@ ul.Projects_List{
 .Projects_List.ng-enter-stagger {
   transition-delay: 0.3s;
 }
+.Projects_List.ng-leave {
+  transition:0.2s linear all;
+  opacity:1;
+}
+.Projects_List.ng-leave.ng-leave-active {
+  opacity:0;
+}
+/* Project Detail Page */
 .Detail_Image_Container ul{
   display: flex;
   flex-direction: row;
@@ -140,9 +161,39 @@ ul.Projects_List{
   height: 450px;
 }
 .projectDetail_Herotxt{
-  font-size: 40px;
-  margin-left: 100px;
-  padding-top: 25px;
+  font-size: 35px;
+  margin-left: 150px;
+  padding-top: 15px;
+}
+.Close_Button{
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+  margin-right: 25px;
+  margin-top: 15px;
+  font-family:'Roboto',sans-serif;
+}
+
+.Close_Button_Item a{
+  font-size: 25px;
+  border-color: black;
+  border-width: 2px;
+  color: black;
+  border-style: solid;
+  padding: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.Close_Button_Item a:hover{
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 /* Body transtion effect */
 main.ng-enter {

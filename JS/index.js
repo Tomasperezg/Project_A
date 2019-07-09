@@ -11,7 +11,6 @@ index.controller("controller",function($scope){
     {Link: "#!/whoarewe", name: 'Who are we?'}
   ];
 
-
    $scope.NavBarDisplay = "hide";
     $scope.NavBar_Open = function(){
         if ($scope.NavBarDisplay === "hide")

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+  <div class="Close_Button">
+    <p class="Close_Button_Item"><a href="#!/projects">X</a></p>
+  </div>
   <div ng-repeat="detail in $ctrl.home">
     <div class="projectDetail_Herotxt">
       <h1>{{detail.Name}}</h1>
@@ -16,6 +18,9 @@
           <img ng-src="{{img}}"/>
         </li>
       </ul>
+    </div>
+    <div class="Slide_Buttons">
+
     </div>
 
     <div class="Detail_Content">
