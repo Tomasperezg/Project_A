@@ -24,8 +24,30 @@
     </div>
 
     <div class="Detail_Content">
-      <p>Bedrooms: {{detail.Bedrooms}}</p>
-      <p>Bathrooms: {{detail.Bathrooms}}</p>
+      <div class="Detail_Specs">
+          <p><strong>Location:</strong> <br/>
+            {{detail.location}}</p>
+          <p><strong>Bedrooms:</strong> <br/>
+            {{detail.Bedrooms}}</p>
+          <p><strong>Bathrooms:</strong> <br/>
+            {{detail.Bathrooms}}</p>
+          <p><strong>Size:</strong><br/>
+            {{detail.Size}}</p>
+      </div>
+      <div class="Detail_Desc">
+        <p><strong>Description:</strong><br/>
+          {{detail.Description}}</p>
+        <p><strong>Available:</strong><br/>
+          {{detail.Available}}</P>
+        <p><strong>Sold:</strong><br/>
+          {{detail.Sold}}</p>
+        <p><strong>Price:</strong><br/>
+          {{detail.Price}}</p>
+      </div>
+      <div class="Detail_Broad_Desc">
+        <p><strong>More:</strong><br/>
+          {{detail.More}}</p>
+      </div>
     </div>
   </div>
 

@@ -1,18 +1,20 @@
 [{
-	"Name": "2677 Street Name ST, East Grand Rapids",
+	"Available": "No Longer Available",
 	"Bedrooms": "3",
 	"Bathrooms": "2",
-	"Price": "200,000",
-	"location": "East Grand Rapids",
 	"Description": "This is the example of some description",
-	"Available": "sold",
-	"Sold": "04/07/1994",
 	"Images": [
 		"Images/Home1.jpg",
 		"Images/Home2.jpg",
 		"Images/Home3.jpg",
 		"Images/Home4.jpg",
 		"Images/Home5.jpg"
-	]
+	],
+	"location": "East Grand Rapids",
+	"More": "Under this section we will give a complete description, time and effort to build this house and everything a potential customer would like to know",
+	"Name": "2677 Street Name ST, East Grand Rapids",
+	"Price": "300,000",
+	"Sold": "04/07/2014",
+	"Size": "1700 sqft"
 }
 ]
