@@ -96,7 +96,7 @@ a.NavItem:hover{
   flex-wrap: wrap;
   margin-left: 200px;
   margin-right: 200px;
-  margin-top: 150px;
+  margin-top: 110px;
 }
 .Project_Herotxt{
   text-align: center;
@@ -143,6 +143,23 @@ a.NavItem:hover{
 .Projects_List.ng-leave.ng-leave-active {
   opacity:0;
 }
+.Projects_Filt_txt{
+  font-size: 18px;
+}
+.Projects_FilterBar{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 200px;
+}
+.Project_Options{
+  border-style: solid;
+  border-radius: 0;
+  text-align: center;
+  font-size: 18px;
+  height: 35px;
+  background-color: white;
+  margin-left: 10px;
+}
 /* Project Detail Page */
 .Detail_Image_Container ul{
   display: flex;
@@ -158,6 +175,20 @@ a.NavItem:hover{
   display: flex;
   justify-content: center;
   padding-top: 50px;
+}
+.Main_Image.Main_Image_Container.ng-enter.{
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+.Main_Image.Main_Image_Container.ng-enter.ng-enter-active{
+  opacity: 1;
+}
+.Main_Image_Container.ng-leave{
+  transition: 0.3s linear all;
+  opacity: 1;
+}
+.Main_Image_Container.ng-leave.ng-leave-active{
+  opacity: 0;
 }
 .Main_Image{
   width: 500px;
