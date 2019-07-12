@@ -7,17 +7,16 @@
   </div>
   <div class="Projects_FilterBar">
     <p class="Projects_Filt_txt"><strong>Search By:</strong></p>
-    <select class="Project_Options" ng-model="Value">
-      <option value="Clear">All</option>
-      <option value="Available">Available</option>
-      <option value="Sold">Sold</option>
+    <select class="Project_Options" ng-model="obj.ValueType" ng-options="select for select in uniqueTypes">
+      	<option value=""></option>
     </select>
   </div>
   <div class="Projects_Container">
-    <ul class="Projects_List" ng-repeat="Item in $ctrl.projectItems">
+    <ul class="Projects_List" ng-repeat="Item in $ctrl.projectItems | filter: customFilter(obj.ValueType)" value="{{Item.typ}}">
       <div class="Project_Item_Cont">
         <a href="#!/projects/{{Item.ID}}"><img class="Project_Image" ng-src="{{Item.Image}}" alt="{{Item.Text}}" /></a>
         <li class="Project_Item">{{Item.Name}}</li>
+
       </div>
     </ul>
 
