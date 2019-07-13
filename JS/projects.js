@@ -1,7 +1,7 @@
 "use strict";
 
 angular.
-  module('homeApp')
+module('homeApp')
   .component('projects', {
     templateUrl: "projects.html",
     controller: function ProjectController($timeout, $http){
@@ -20,20 +20,24 @@ angular.
                 for (var k = 0; k < self.projectItems[i].typ.length; k++){
                   self.QueryArray.push(self.projectItems[i].typ[k]);
                 }
+
               }
 
-              self.uniqueTypes= self.QueryArray.filter(function(myItem, index){
+              self.uniqueTypes = self.QueryArray.filter(function(myItem, index){
       				      return self.QueryArray.indexOf(myItem) == index;
-      				});
+                    console.log("here");
+      				},
+              self.customFilter = function(myItem){
 
-              self.customFilter=function(myItem){
-                if(myItem===null){
-                   return "";
-                }
-                else{
-                  return myItem;
-                }
-              }
+                  if(myItem===null){
+                     return "";
+                     console.log("Everything was returned");
+                  }
+                  else{
+                    return myItem;
+                    console.log("BlackBird");
+                  }
+                });
 
               console.log(self.projectItems);
               console.log(self.QueryArray);
@@ -44,5 +48,6 @@ angular.
             });
 
       },delaytime);
+
     }
   });
