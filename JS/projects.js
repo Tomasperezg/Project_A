@@ -6,7 +6,7 @@ module('homeApp')
     templateUrl: "projects.html",
     controller: function ProjectController($timeout, $http){
       var self = this;
-      var delaytime = 500;
+      var delaytime = 800;
       $timeout(function(){
           $http({
             method: 'GET',
@@ -25,23 +25,19 @@ module('homeApp')
 
               self.uniqueTypes = self.QueryArray.filter(function(myItem, index){
       				      return self.QueryArray.indexOf(myItem) == index;
-                    console.log("here");
       				},
               self.customFilter = function(myItem){
 
                   if(myItem===null){
                      return "";
-                     console.log("Everything was returned");
                   }
                   else{
                     return myItem;
-                    console.log("BlackBird");
                   }
                 });
 
               console.log(self.projectItems);
               console.log(self.QueryArray);
-              console.log("This is working");
 
             },function (error){
               console.log("There is an error");

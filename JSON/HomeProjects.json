@@ -1,6 +1,7 @@
 [{
     "ID": "1",
     "Image": "Images/Home1.jpg",
+    "Location": ["Location 1"],
 		"Name": "Home 1",
 		"Text": "This is the Image of home 1",
     "typ": ["Sold"]
@@ -8,6 +9,7 @@
 	{
     "ID": "2",
     "Image": "Images/Home2.jpg",
+    "Location": ["Location 2"],
 		"Name": "Home 2",
 		"Text": "This is the Image of home 2",
     "typ": ["Sold"]
@@ -15,6 +17,7 @@
 	{
     "ID": "3",
     "Image": "Images/Home3.jpg",
+    "Location": ["Location 1"],
 		"Name": "Home 3",
 		"Text": "This is the Image of home 3",
     "typ": ["Available"]
@@ -22,6 +25,7 @@
 	{
     "ID": "4",
     "Image": "Images/Home4.jpg",
+    "Location": ["Location 1"],
 		"Name": "Home 4",
 		"Text": "This is the Image of home 4",
     "typ": ["Sold"]
@@ -29,6 +33,7 @@
 	{
     "ID": "5",
     "Image": "Images/Home5.jpg",
+    "Location": ["Location 3"],
 		"Name": "Home 5",
 		"Text": "This is the Image of home 5",
     "typ": ["Available"]
@@ -36,6 +41,7 @@
   {
     "ID": "6",
     "Image": "Images/Hero_1.jpg",
+    "Location": ["Location 2"],
 		"Name": "Home 6",
 		"Text": "This is the Image of home 6",
     "typ": ["Available"]

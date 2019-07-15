@@ -126,7 +126,7 @@ a.NavItem:hover{
   opacity: 0.9;
 }
 .Projects_List.ng-enter {
-  transition:0.9s linear all;
+  transition:0.5s linear all;
   opacity:0;
 }
 
@@ -137,7 +137,7 @@ a.NavItem:hover{
   transition-delay: 0.3s;
 }
 .Projects_List.ng-leave {
-  transition:0.2s linear all;
+  transition:0.6s linear all;
   opacity:1;
 }
 .Projects_List.ng-leave.ng-leave-active {
