@@ -13,6 +13,9 @@
         .when("/projects/:ItemID",{
           template: "<project-detail></project-detail>"
         })
+        .when("/contact", {
+          template: "<contact></contact>"
+        })
         .otherwise({redirectTo: "/home"});
     });
 }

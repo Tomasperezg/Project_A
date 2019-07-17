@@ -20,11 +20,8 @@ body {
   list-style-type: none;
   flex-direction: column;
   align-items: flex-start;
-  font-family: "Avenir Next", "Avenir", sans-serif;
   margin-top: 10px;
   margin-left: 30px;
-  box-shadow: 5px 5px 10px;
-  background-color: EBE6E5;
 }
 .NavBar_Button{
   margin-bottom: 10px;
@@ -89,6 +86,21 @@ a.NavItem:hover{
 .hide{
   display: none;
 }
+/* Contact Section */
+.Contact_Herotxt{
+  text-align: center;
+  padding-top: 25px;
+  font-size: 40px;
+}
+.Contact_Background{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.Contact_Background img{
+  border-radius: 10%;
+  opacity: 0.6;
+}
 /* Project Section */
 .Projects_Container{
   display: flex;
@@ -119,10 +131,10 @@ a.NavItem:hover{
   opacity: 0.4;
 }
 .Project_Image:hover{
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 0.9;
 }
 .Projects_List.ng-enter {
@@ -137,7 +149,7 @@ a.NavItem:hover{
   transition-delay: 0.3s;
 }
 .Projects_List.ng-leave {
-  transition:0.6s linear all;
+  transition: all 0.6s ease-in-out;
   opacity:1;
 }
 .Projects_List.ng-leave.ng-leave-active {
