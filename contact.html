@@ -1,10 +1,33 @@
 <html>
 <body>
-  <p class="Contact_Herotxt">Contact Us</p>
+  <!-- <p class="Contact_Herotxt">Contact Us</p> -->
 
   <div class="Contact_Contain">
+    <div class="Contact_Herotxt">Contact Us</div>
     <div class="Contact_Background" ng-repeat="con in $ctrl.backgroundImg">
       <img ng-src="{{con.bg}}" alt="{{con.alt}}" class="HeroBackImg" />
+        <div class="ContactFomrCont">
+          <p>Full Name:</p>
+          <input class="ContactInbox" type="text" placeholder="Full Name">
+          <br/>
+          <p>Phone Number:</p>
+          <input class="ContactInbox" type="number" placeholder="Full Name">
+          <br/>
+          <p>Email:</p>
+          <input class="ContactInbox" type="email" placeholder="Full Name">
+        </div>
+
+        <div class="ContactFomr_bodyEm">
+          <div class="EmailBodyInpit">
+            <p>Subject:</p>
+            <input type="text" placeholder="Full Name"class="ContactInbox">
+            <br/>
+            <p>Body:</p>
+            <textarea placeholder="Message"></textarea>
+            <br/>
+            <button class="ContactSubmit">Send</button>
+          </div>
+        </div>
     </div>
   </div>
 
