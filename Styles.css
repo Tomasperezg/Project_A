@@ -6,9 +6,7 @@ html{
 body {
     margin: 0 !important;
     padding: 0 !important;
-
 }
-
 /* Navigation */
 .NavContainer{
   z-index: 1;
@@ -30,7 +28,6 @@ body {
   margin-left: 35px;
   margin-top: 15px;
 }
-
 .NavItem{
   width: 150px;
   color: black;
@@ -46,13 +43,11 @@ a.NavItem{
 a.NavItem:hover{
   color: tomato;
 }
-
 /* Home Page CSS */
 .HomePage_Background{
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 /* slideshow */
 .Hero_1{
@@ -98,27 +93,63 @@ a.NavItem:hover{
   justify-content: center;
 }
 .Contact_Background img{
-  opacity: 0.5;
-  width: 65%;
-  height: 550px;
+  opacity: 0.3;
+  width: 600px;
+  height: 570px;
   z-index: -1;
   position: absolute;
   border-radius: 10%;
+  border-style: double;
+  border-color: black;
+  border-width: 5px;
+  box-shadow: 3px 3px -3px -4px;
+  display: flex;
+  justify-content: center;
 }
 .ContactFomrCont{
- margin-top: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
  }
-.ContactFomr_bodyEm{
-  margin-left: 100px;
-  margin-top: 50px;
-}
-.ContactFomr_bodyEm{
-display: flex;
-}
-.ContactInbox{
+
+.ContactInbox {
   width: 300px;
   border: none;
   border-bottom: 2px solid red;
+}
+.ContactBoxLabel{
+  text-align: center;
+  color: black;
+}
+.ContactInbox::placeholder{
+  color: grey;
+}
+input[type=text], input[type=number] ,input[type=email]{
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  color: black;
+}
+.textbox{
+  height: 100px;
+  resize: none;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  color: black;
+}
+.ContactSubmit{
+  height: 30px;
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+}
+.ContactSubmit:hover{
+  background: white;
+  color: black;
+  transition: 0.3s ease-in-out;
 }
 /* Project Section */
 .Projects_Container{
