@@ -94,8 +94,8 @@ a.NavItem:hover{
 }
 .Contact_Background img{
   opacity: 0.3;
-  width: 600px;
-  height: 570px;
+  width: 680px;
+  height: 630px;
   z-index: -1;
   position: absolute;
   border-radius: 10%;
@@ -107,7 +107,7 @@ a.NavItem:hover{
   justify-content: center;
 }
 .ContactFomrCont{
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
