@@ -1,13 +1,7 @@
 <?php
 
-ini_set( 'SMTP', 'attlocal.net' ); // must be set to your own local ISP
-ini_set( 'smtp_port', '25' ); // assumes no authentication (passwords) required
-ini_set( 'sendmail_from', 'tomy1356@live.com' ); // can be any e-mail address, but must be set
-
-
 // define variables and set to empty values
 $name = "";
-$number = "";
 $email = "";
 $body = "";
 $nameError ="";
@@ -63,7 +57,8 @@ if(isset($_POST['submit'])){
   }
   }
   else
-  { $emailErr = "Invalid Email";
+  {
+    $emailErr = "Invalid Email";
    }
    }
   } // Function for filtering input values.function test_input($data)

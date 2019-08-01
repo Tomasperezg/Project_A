@@ -94,7 +94,7 @@ a.NavItem:hover{
 }
 .Contact_Background img{
   opacity: 0.3;
-  width: 680px;
+  width: 690px;
   height: 630px;
   z-index: -1;
   position: absolute;
@@ -223,6 +223,23 @@ input[type=text], input[type=number] ,input[type=email]{
   margin-left: 10px;
 }
 /* Project Detail Page */
+.slide.ng-hide-add.ng-hide-add-active {
+    opacity:0;
+}
+
+.slide.ng-hide-remove {
+    -webkit-transition:1s linear all;
+    -moz-transition:1s linear all;
+    -o-transition:1s linear all;
+    transition:1s linear all;
+    display:block!important;
+    opacity:0;
+}
+
+.slide, .slide.ng-hide-remove.ng-hide-remove-active {
+opacity:1;
+}
+
 .Detail_Image_Container ul{
   display: flex;
   flex-direction: row;
@@ -236,8 +253,20 @@ input[type=text], input[type=number] ,input[type=email]{
 .Main_Image_Container{
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 50px;
 }
+.PREV{
+  height: 30px;
+  width: 60px;
+  margin-right: 10px;
+}
+.Next{
+  height: 30px;
+  width: 60px;
+  margin-left: 10px;
+}
+
 .Main_Image.Main_Image_Container.ng-enter.{
   transition: 0.5s linear all;
   opacity: 0;

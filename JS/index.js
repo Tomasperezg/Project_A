@@ -1,5 +1,5 @@
 "use strict";
-var index = angular.module("homeApp",  ["ngRoute", "ngAnimate","ui.bootstrap"]);
+var index = angular.module("homeApp",  ["ngRoute", "ngAnimate","ui.bootstrap", "ngTouch"]);
 
 index.controller("controller",function($scope){
 

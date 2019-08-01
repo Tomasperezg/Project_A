@@ -9,7 +9,9 @@
       <h1>{{detail.Name}}</h1>
     </div>
     <div class="Main_Image_Container">
-      <img class="Main_Image" ng-src="{{detail.Images[0]}}"/>
+      <button class="PREV" ng-href="#" ng-click="$ctrl.showPrev()">Prev</button>
+        <img class="Main_Image slide" ng-swipe-right="$ctrl.showPrev()" ng-swipe-left="$ctrl.showNext()" ng-show="$ctrl.isActive($index)" ng-repeat="IMG in $ctrl.Images" ng-src="{{IMG}}"/>
+      <button class="Next" ng-href="#" ng-click="$ctrl.showNext()">Next</button>
     </div>
 
     <div class="Detail_Image_Container">

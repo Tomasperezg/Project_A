@@ -13,7 +13,6 @@
                 <br/>
                 <p class="ContactBoxLabel">Phone Number:</p>
                 <input class="ContactInbox" type="number" placeholder="Cell #" name="number">
-                <span class="error">* <?php echo $phoneErr;?></span>
                 <br/>
                 <p class="ContactBoxLabel">Email:</p>
                 <input class="ContactInbox" type="email" placeholder="Email" name="email">
@@ -21,12 +20,13 @@
                 <br/>
                 <p class="ContactBoxLabel">Subject:</p>
                 <input type="text" placeholder="Subject"class="ContactInbox" name="subject">
+                <span class="error">* <?php echo $subjectErr;?></span>
                 <br/>
                 <p class="ContactBoxLabel">Body:</p>
                 <textarea placeholder="Message" class="textbox" name="body"></textarea>
                 <span class="error">* <?php echo $bodyErr;?></span>
                 <br/>
-                <button class="ContactSubmit" type="submit" name="submit" value="submit">Send</button>
+                <input class="ContactSubmit" type="submit" name="submit" value="submit">
 
             </div>
           </form>
