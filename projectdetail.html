@@ -9,18 +9,18 @@
       <h1>{{detail.Name}}</h1>
     </div>
     <div class="Main_Image_Container">
-      <button class="PREV" ng-href="#" ng-click="$ctrl.showPrev()">Prev</button>
+      <button class="PREV" ng-href="#" ng-click="$ctrl.showPrev()"><</button>
         <img class="Main_Image slide" ng-swipe-right="$ctrl.showPrev()" ng-swipe-left="$ctrl.showNext()" ng-show="$ctrl.isActive($index)" ng-repeat="IMG in $ctrl.Images" ng-src="{{IMG}}"/>
-      <button class="Next" ng-href="#" ng-click="$ctrl.showNext()">Next</button>
+      <button class="Next" ng-href="#" ng-click="$ctrl.showNext()">></button>
     </div>
 
-    <div class="Detail_Image_Container">
+    <!-- <div class="Detail_Image_Container">
       <ul class="Detail_Image">
         <li ng-repeat="img in detail.Images">
           <img ng-src="{{img}}"/>
         </li>
       </ul>
-    </div>
+    </div> -->
     <div class="Slide_Buttons">
 
     </div>

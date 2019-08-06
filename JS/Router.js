@@ -16,6 +16,9 @@
         .when("/contact", {
           template: "<contact></contact>"
         })
+        .when("/about", {
+          template: "<about></about>"
+        })
         .otherwise({redirectTo: "/home"});
     });
 }

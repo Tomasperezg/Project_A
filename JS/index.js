@@ -8,7 +8,7 @@ index.controller("controller",function($scope){
     {Link: "#!/contact", name: 'Contact'},
     {Link: "#!/projects", name: 'Projects'},
     {Link: "#!/mentions", name: 'Mentions'},
-    {Link: "#!/whoarewe", name: 'Who are we?'}
+    {Link: "#!/about", name: 'About'}
   ];
 
    $scope.NavBarDisplay = "hide";
@@ -27,6 +27,10 @@ index.controller("controller",function($scope){
 
        else
           $scope.NavBarDisplay = "hide";
+    };
+
+    $scope.HideNavBar = function(){
+      $scope.NavBarDisplay = "hide";
     }
 
 
