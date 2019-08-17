@@ -14,15 +14,15 @@
   <body>
     <!-- <ng-view></ng-view> -->
   <div ng-controller="controller">
-    <div ng-click="isCollapsed=!isCollapsed" class="NavBar_Button">
+    <!-- <div ng-click="isCollapsed=!isCollapsed" class="NavBar_Button">
       <span  ng-class="{'glyphicon glyphicon-menu-down pull-right pan_arrow1': !isCollapsed, 'glyphicon glyphicon-menu-up pull-right pan_arrow1': isCollapsed}" ng-click="NavBar_Open()"></span>
-    </div>
+    </div> -->
 
 
     <div class="NavContainer">
 
-      <ul class="NavBar" ng-class="NavBarDisplay" ng-click="isCollapsed=!isCollapsed">
-        <li ng-repeat="ItemList in NavBarItemList" class="NavItem" ng-click="HideNavBar()">
+      <ul class="NavBar" ng-class="NavBarDisplay">
+        <li ng-repeat="ItemList in NavBarItemList" class="NavItem">
           <a class="NavItem" href="{{ItemList.Link}}">
             {{ItemList.name}}
           </a>
