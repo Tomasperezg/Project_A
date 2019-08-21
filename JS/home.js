@@ -15,6 +15,9 @@ angular.
       self.HomeProIMG = [
         {ProIMG: "Images/Hero_2.jpg", desc: "This is an example of one project"}
       ];
+      self.HomeContIMG = [
+        {ContIMG: "Images/Hero_3.jpg", condesc: "Description of the contact image"}
+      ];
 
     }
 

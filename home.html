@@ -7,7 +7,6 @@
               <div class="center">
                 <p>Black Bird Homes</p>
               </div>
-
         </div>
 
         <div class="Logo">
@@ -25,9 +24,19 @@
         <img ng-repeat="ProIM in $ctrl.HomeProIMG" ng-src="{{ProIM.ProIMG}}"/>
       </div>
       <div class="Home_protxt">
-        <p>Some general description about the house</p>
-        <button>More</button>
+        <p>Some general description about all the houses</p>
+        <button>See Projects</button>
       </div>
+    </div>
+    <div class="Home_ContactBox">
+      <div class="Home_Contacttxt">
+        <p>Some energetic message to encourage user to contact</p>
+        <button><a href="#!/contact">Contact Us</a></button>
+      </div>
+      <div class="Home_ContactImg">
+        <img ng-repeat="conIMG in $ctrl.HomeContIMG" ng-src="{{conIMG.ContIMG}}"/>
+      </div>
+
     </div>
 
 </body>
