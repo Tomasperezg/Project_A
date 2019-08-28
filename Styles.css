@@ -51,6 +51,12 @@ a.NavItem:hover{
 }
 .Hero_img{
   width: 100%;
+
+}
+.Hero_img img{
+  background-attachment: fixed;
+  width: 100%;
+  height: 900px;
 }
 .center{
   position: absolute;
@@ -96,7 +102,7 @@ a.NavItem:hover{
 .Home_MoreAboutbttn{
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 15px;
 }
 .Home_MoreAboutbttn button:hover{
@@ -112,7 +118,7 @@ a.NavItem:hover{
   margin-left: 245px;
 }
 .Home_ProjectIMG img{
-  width: 300px;
+  width: 440px;
   height: 350px;
   border: 5px;
   border-color: black;
@@ -129,6 +135,7 @@ a.NavItem:hover{
   border: 4px double black;
   color: black;
   align-self: center;
+  font-size: 15px;
 }
 .Home_protxt button:hover{
   background-color: black;
@@ -144,7 +151,7 @@ a.NavItem:hover{
   margin-right: 245px;
 }
 .Home_ContactImg img{
-  width: 300px;
+  width: 440px;
   height: 350px;
   border: 5px;
   border-color: black;
@@ -156,7 +163,8 @@ a.NavItem:hover{
   border: 4px double black;
   color: black;
   align-self: center;
-  margin-left: 70%;
+  margin-left: 77%;
+  font-size: 15px;
 }
 .Home_Contacttxt button:hover{
   background-color: black;
@@ -167,6 +175,50 @@ a.NavItem:hover{
   align-self: center;
   font-size: 18px;
   margin-right: 40px;
+}
+.footer{
+  background-color: black;
+  margin-top: 40px;
+  width: 100%;
+  height: 70px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.Home_SubsInputs p{
+  text-align: center;
+  margin-top: 3px;
+}
+.Home_SubsInputs input[type=email]{
+  width: 300px;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+}
+.Home_NewsLetter{
+  display: flex;
+  justify-content: center;
+}
+.Home_SubNews{
+  margin-left: 10px;
+  background: transparent;
+  border: 4px double white;
+  color: white;
+  align-self: center;
+  font-size: 15px;
+}
+.Home_SubNews:hover{
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+.Home_SubsInputs span{
+  align-self: flex-end;
+  margin-left: 5px;
 }
 /* Generic */
 .hide{
@@ -182,24 +234,27 @@ a:hover{
   color: inherit;
   cursor: auto;
 }
+.span{
+  color: red;
+}
 /* Contact Section */
 .Contact_Herotxt{
   text-align: center;
-  padding-top: 25px;
+  padding-top: 60px;
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .Contact_Background{
   display: flex;
   justify-content: center;
 }
 .Contact_Background img{
-  opacity: 0.3;
+  opacity: 0.5;
   width: 690px;
-  height: 630px;
+  height: 600px;
   z-index: -1;
   position: absolute;
-  border-radius: 10%;
+  border-radius: 5%;
   border-style: double;
   border-color: black;
   border-width: 5px;
@@ -223,6 +278,7 @@ a:hover{
 .ContactBoxLabel{
   text-align: center;
   color: black;
+  margin-top: 10px;
 }
 .ContactInbox::placeholder{
   color: grey;
@@ -244,7 +300,7 @@ input[type=text], input[type=number] ,input[type=email]{
 .ContactSubmit{
   height: 30px;
   background: transparent;
-  border: 2px solid black;
+  border: 4px double black;
   color: black;
 }
 .ContactSubmit:hover{
@@ -259,16 +315,18 @@ input[type=text], input[type=number] ,input[type=email]{
   flex-wrap: wrap;
   margin-left: 200px;
   margin-right: 200px;
-  margin-top: 110px;
+  margin-top: 40px;
 }
 .Project_Herotxt{
   text-align: center;
-  padding-top: 25px;
+  padding-top: 60px;
   font-size: 40px;
 }
 .Project_Item{
   font-size: 25px;
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .Project_Image{
   width: 270px;
@@ -409,8 +467,9 @@ opacity:1;
   justify-content: flex-end;
   z-index: 1;
   margin-right: 25px;
-  margin-top: 15px;
+  margin-top: 60px;
   font-family:'Roboto',sans-serif;
+
 }
 
 .Close_Button_Item a{

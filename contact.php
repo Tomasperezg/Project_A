@@ -4,8 +4,8 @@
 $name = "";
 $email = "";
 $body = "";
-$nameError ="";
-$emailError ="";
+$nameErr ="";
+$emailErr ="";
 $bodyErr = "";
 $successMessage ="";
 

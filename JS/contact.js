@@ -8,7 +8,7 @@ angular.
       var self = this;
 
       self.backgroundImg = [
-        {bg: "Images/MainHomeIMG.jpg", alt: "Lovely home background"}
+        {bg: "Images/ContactIMG.jpg", alt: "Lovely kitchen home background"}
       ];
     }
   });

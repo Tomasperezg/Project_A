@@ -6,7 +6,9 @@
               <img  ng-repeat="Image in $ctrl.Images"class="Hero_img"ng-src="{{Image.CarImg}}" alt="{{Image.alter}}" />
               <div class="center">
                 <p>Black Bird Homes</p>
+
               </div>
+
         </div>
 
         <div class="Logo">
@@ -17,7 +19,10 @@
       <p>This is a short description of what this company is about and valius</p>
     </diV>
     <div class="Home_MoreAboutbttn">
-      <button>Learn More</button>
+      <button><a href="#!/about">Learn More</a></button>
+    </div>
+    <div class="Home_Awards">
+      
     </div>
     <div class="Home_ProjectBox">
       <div class="Home_ProjectIMG">
@@ -25,7 +30,7 @@
       </div>
       <div class="Home_protxt">
         <p>Some general description about all the houses</p>
-        <button>See Projects</button>
+        <button><a href="#!/projects">See Projects</a></button>
       </div>
     </div>
     <div class="Home_ContactBox">
@@ -38,6 +43,22 @@
       </div>
 
     </div>
+    <div class="footer">
+      <!-- <img src="Images/MainFooter.jpg"/> -->
+      <div class="Home_SubsInputs">
+        <p>News Letter:</p>
+
+        <form action="contact.php" method="post" class="Home_NewsLetter">
+          <input type="email" placeholder="Email" type="email" name="email"/>
+          <button class="Home_SubNews">submit</button>
+          <span class="error">* <?php echo $emailErr;?></span>
+        </form>
+      </div>
+      <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+      <div class="Home_SocialContacts">
+      </div>
+    </div>
+
 
 </body>
 </html>
