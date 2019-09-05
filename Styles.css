@@ -226,23 +226,7 @@ a.NavItem:hover{
   align-self: flex-end;
   margin-left: 5px;
 }
-/* Generic */
-.hide{
-  display: none;
-}
-a{
-  text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
-}
-a:hover{
-  text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
-}
-.span{
-  color: red;
-}
+
 /* Contact Section */
 
 .Contact_Herotxt{
@@ -541,13 +525,28 @@ opacity:1;
 .Detail_Broad_Desc p{
   width: 60%;
 }
+
 /* About Page */
-.AboutPage_Herotxt{
+.AboutHR{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  opacity: .6;
+  position: relative;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 500px;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 300px;
+}
+/* .AboutPage_Herotxt{
   margin-left: 300px;
   padding-top: 60px;
   font-size: 40px;
   font-family: 'Open Sans', sans-serif;
-}
+} */
 .AboutPage_AbtBBH{
   display: flex;
 }
@@ -620,4 +619,21 @@ main.ng-leave.ng-leave-active{
   display: none;
   opacity: 0;
   top: 0;
+}
+/* Generic */
+.hide{
+  display: none;
+}
+a{
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+a:hover{
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+.span{
+  color: red;
 }
