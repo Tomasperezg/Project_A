@@ -39,9 +39,11 @@
       <button class="About_Next" ng-href="#" ng-click="$ctrl.showNext()">></button>
     </div>
   </div>
-  <div class="About_comment" ng-repeat="aboutcomm in $ctrl.aboutCustomerComm">
-    <p class="Comment">{{aboutcomm.comments}}</p>
-    <p class="custName">{{aboutcomm.userName}}</p>
+  <div class="About_comment">
+    <div class="commentContain" ng-repeat="aboutcomm in $ctrl.aboutCustomerComm" ng-swipe-right="$ctrl.showPrev()" ng-swipe-left="$ctrl.showNext()" ng-show="$ctrl.isActive($index)">
+      <p class="Comment">{{aboutcomm.comments}}</p>
+      <p class="custName">{{aboutcomm.userName}}</p>
+    </div>
   </div>
 
 </div>
