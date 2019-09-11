@@ -6,6 +6,9 @@ module('homeApp')
     templateUrl: "projects.html",
     controller: function ProjectController($timeout, $http){
       var self = this;
+      self.ProjectHero = [
+        {ProHero: "Images/ProjectsHero.jpg", alt: "This is the project Hero banner"}
+      ];
       var delaytime = 800;
       $timeout(function(){
           $http({

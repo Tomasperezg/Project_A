@@ -1,9 +1,13 @@
 <html>
 <body>
-<div class="Contact_Herotxt">Contact Us</div>
+  <div class="HeroIMGContain">
+    <img ng-repeat="hero in $ctrl.ContactHeroIMG" ng-src="{{hero.ContHero}}" class="ContactHR" alt="{{hero.alt}}">
+    <div class="Contact_Herotxt">Contact Us</div>
+  </div>
+
   <div class="Contact_Contain">
         <div class="Contact_Background" ng-repeat="con in $ctrl.backgroundImg">
-          <img ng-src="{{con.bg}}" alt="{{con.alt}}" class="HeroBackImg" />
+          <!-- <img ng-src="{{con.bg}}" alt="{{con.alt}}" class="HeroBackImg" /> -->
           <form  action="contact.php" method="post" class="Contact_Form">
 
             <div class="ContactFomrCont">
@@ -26,7 +30,7 @@
                 <textarea placeholder="Message" class="textbox" name="body"></textarea>
                 <span class="error">* <?php echo $bodyErr;?></span>
                 <br/>
-                <input class="ContactSubmit" type="submit" name="submit" value="submit">
+                <input class="ContactSubmit" type="submit" name="submit" value="Submit">
 
             </div>
           </form>

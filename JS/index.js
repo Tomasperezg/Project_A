@@ -7,7 +7,7 @@ index.controller("controller",function($scope){
     {Link: "#!/home", name: 'Home'},
     {Link: "#!/contact", name: 'Contact'},
     {Link: "#!/projects", name: 'Projects'},
-    {Link: "#!/mentions", name: 'Mentions'},
+    // {Link: "#!/mentions", name: 'Mentions'},
     {Link: "#!/about", name: 'About'}
   ];
 

@@ -1,10 +1,17 @@
 <html>
 <body>
+  <div class="ProjectHeroImg">
+    <img ng-repeat="ProBNR in $ctrl.ProjectHero" ng-src="{{ProBNR.ProHero}}" alt="{{ProBNR.alt}}"/>
+    <div class="Project_Herotxt">
+      <p class="Herotxt">Projects</p>
 
-  <div class="Project_Herotxt">
+    </div>
+  </div>
+
+  <!-- <div class="Project_Herotxt">
     <p class="Herotxt">Projects</p>
 
-  </div>
+  </div> -->
   <div class="Projects_FilterBar">
     <p class="Projects_Filt_txt"><strong>Search By:</strong></p>
     <select class="Project_Options" ng-model="selected" ng-options="myItem for myItem in $ctrl.uniqueTypes">

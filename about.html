@@ -22,10 +22,26 @@
 </div>
 <div class="AboutPage_OwnerSec">
   <div class="Owner_Abouttxt">
+    <p class="About_OwnerName">Name of Owner</p>
     <p>A text about Black Birds Homes CEO, past, live, anything that can help the user to know more about the owner</p>
   </div>
   <div class="Owner_IMG">
     <img src="Images/OwnerIMG.jpg" alt="A picute of Black Bird Homes CEO">
+  </div>
+
+</div>
+<div class="About_CustomersComment">
+  <div class="About_CustCommArrows">
+    <div class="PREV_Contain">
+      <button class="About_PREV" ng-href="#" ng-click="$ctrl.showPrev()"><</button>
+    </div>
+    <div class="NextContai">
+      <button class="About_Next" ng-href="#" ng-click="$ctrl.showNext()">></button>
+    </div>
+  </div>
+  <div class="About_comment" ng-repeat="aboutcomm in $ctrl.aboutCustomerComm">
+    <p class="Comment">{{aboutcomm.comments}}</p>
+    <p class="custName">{{aboutcomm.userName}}</p>
   </div>
 
 </div>

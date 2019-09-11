@@ -177,7 +177,8 @@ a.NavItem:hover{
   margin-right: 40px;
 }
 .footer{
-  background-image: url(Images/MainFooter.jpg);
+  /* background-image: url(Images/MainFooter.jpg); */
+  background-color: black;
   margin-top: 40px;
   width: 100%;
   height: 80px;
@@ -195,13 +196,14 @@ a.NavItem:hover{
   text-align: center;
   margin-top: 3px;
   font-size: 17px;
-  background: rgba(255,255,255, 0.3);
+  color: white;
+  /* background: rgba(255,255,255, 0.3); */
 }
 .Home_SubsInputs input[type=email]{
   width: 300px;
   color: black;
   border: none;
-  border: 2px double black;
+  border: 4px double black;
   background-color: white;
 }
 .Home_NewsLetter{
@@ -215,7 +217,7 @@ a.NavItem:hover{
   border: 4px double black;
   color: black;
   align-self: center;
-  font-size: 15px;
+  font-size: 19px;
 }
 .Home_SubNews:hover{
   background-color: white;
@@ -228,16 +230,25 @@ a.NavItem:hover{
 }
 
 /* Contact Section */
-
+.HeroIMGContain img{
+  width: 100%;
+  height: 350px;
+  opacity: 0.6;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 0 0 10px 5px;
+}
 .Contact_Herotxt{
-  margin-left: 370px;
-  padding-top: 60px;
+  position: absolute;
+  bottom: 500px;
   font-size: 40px;
-  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 300px;
 }
 .Contact_Background{
   display: flex;
   justify-content: center;
+  padding-top: 40px;
 }
 .Contact_Background img{
   opacity: 0.5;
@@ -296,11 +307,19 @@ input[type=text], input[type=number] ,input[type=email]{
   margin-bottom: 40px;
 }
 .ContactSubmit:hover{
-  background: white;
-  color: black;
+  background: black;
+  color: white;
   transition: 0.3s ease-in-out;
 }
 /* Project Section */
+.ProjectHeroImg img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  opacity: .6;
+  position: relative;
+  box-shadow: 0 0 10px 5px;
+}
 .Projects_Container{
   display: flex;
   justify-content: space-around;
@@ -310,9 +329,11 @@ input[type=text], input[type=number] ,input[type=email]{
   margin-top: 40px;
 }
 .Project_Herotxt{
-  margin-left: 280px;
-  padding-top: 60px;
+  position: absolute;
+  bottom: 500px;
   font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 300px;
 }
 .Project_Item{
   font-size: 25px;
@@ -363,6 +384,11 @@ input[type=text], input[type=number] ,input[type=email]{
   display: flex;
   justify-content: flex-end;
   margin-right: 200px;
+  margin-top: 40px;
+  position: relative;
+}
+.Projects_FilterBar select{
+
 }
 .Project_Options{
   border-style: double;
@@ -533,6 +559,7 @@ opacity:1;
   object-fit: cover;
   opacity: .6;
   position: relative;
+  box-shadow: 0 0 10px 5px;
 }
 .bottom-left {
   position: absolute;
@@ -597,6 +624,56 @@ opacity:1;
   border-style: double;
   border-color: black;
   padding: 10px;
+}
+.About_OwnerName{
+  text-align: center;
+  font-size: 18px;
+}
+.About_CustomersComment{
+  margin-top: 40px;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(211,211,211);
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+.About_comment{
+  align-self: center;
+}
+p.Comment{
+  font-size: 18px;
+}
+p.custName{
+  text-align: center;
+  font-size: 12px;
+}
+.About_CustCommArrows{
+  align-self: center;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+}
+.About_PREV{
+  margin-right: 415px;
+  border-style: none;
+  background-color: transparent;
+  font-size: 40px;
+}
+.About_Next{
+  border-style: none;
+  background-color: transparent;
+  font-size: 40px;
+}
+.About_PREV:hover{
+  background-color: black;
+  color: white;
+  transition:0.3s linear all;
+}
+.About_Next:hover{
+  background-color: black;
+  color: white;
+  transition:0.3s linear all;
 }
 /* Body transtion effect */
 main.ng-enter {
