@@ -7,7 +7,7 @@ body {
     margin: 0 !important;
     padding: 0 !important;
 }
-@media only screen  and (min-width : 1224px) {
+
 /* Navigation */
 .NavContainer{
   z-index: 1;
@@ -718,8 +718,8 @@ a:hover{
 .span{
   color: red;
 }
-}
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+@media only screen and (min-width : 980px) and (max-width : 1024px) {
   .NavContainer{
     z-index: 1;
     position: absolute;
@@ -930,6 +930,57 @@ a:hover{
   .Home_SubsInputs span{
     align-self: flex-end;
     margin-left: 5px;
+  }
+  /* Contant Page */
+  .Contact_Herotxt{
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  .HeroIMGContain img{
+    width: 100%;
+    height: 250px;
+    opacity: 0.6;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 0 0 10px 5px;
+  }
+  /* Project Page */
+  .ProjectHeroImg img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    opacity: .6;
+    position: relative;
+    box-shadow: 0 0 10px 5px;
+  }
+  .Projects_Container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-top: 40px;
+  }
+  .Project_Herotxt{
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  .Project_Item{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .Project_Image{
+    width: 270px;
+    height: 250px;
+    border-radius: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 10px 5px;
+    opacity: 0.4;
   }
 
   /* Generic */
