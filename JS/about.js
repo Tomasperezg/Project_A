@@ -10,8 +10,8 @@ angular.
         {AboutBNR: "Images/Home3.jpg", alter: "This is the image of home 1 kitchen "}
       ];
       self.aboutCustomerComm = [
-        {comments: "This is an example of a customer comment", userName: "some name"},
-        {comments: "This is an example of a customer comment(2)", userName: "some name(2)"}
+        {comments: "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet", userName: "Lorem ipsum dolor sit amet"},
+        {comments: "Lorem ipsum dolor sit amet.", userName: "Lorem ipsum dolor sit amet."}
       ];
       console.log(self.aboutCustomerComm.length);
 
